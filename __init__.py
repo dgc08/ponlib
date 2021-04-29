@@ -1,4 +1,4 @@
-__version__ == "1.0.0"
+__version__ = '1.0.1'
 
 
 def read_pton(file):
@@ -7,6 +7,12 @@ def read_pton(file):
     filedict = {}
     for line in file.readlines():
         if line == "":
+            continue
+        if line.startswith("#"):
+            continue
+        if line == "\n":
+            continue
+        if line == " ":
             continue
         varname = line.split(" ", 1)[0]
         real = varname.split("[", 1)[0]
@@ -30,18 +36,27 @@ def read_pton(file):
     return filedict
 
 
-def write_pton(filename, obj, obj_name: str):
-    with open(filename, "a") as fl:
-        fl.write(obj_name+" "+obj.__repr__()+"\n")
+def write_pton(filename, write_obj, obj_name: str):
+    with open(filename, "a") as file:
+        file.write(obj_name + " " + write_obj.__repr__() + "\n")
+
+
+class TestClass:
+    def __repr__(self):
+        return str(type(self).__name__) + "()"
+    def __str__(self):
+        return "A TestClass Object"
 
 
 if __name__ == "__main__":
     with open("example.pton", "r") as fl:
         print(read_pton(fl))
     print()
-    lst = [1,2,3]
-    dct = {"moin":"hallo"}
+    lst = [1, 2, 3]
+    dct = {"moin": "hallo"}
+    obj = TestClass()
     write_pton("write_example.pton", lst, "lst")
     write_pton("write_example.pton", dct, "dct")
+    write_pton("write_example.pton", obj, "obj")
     with open("write_example.pton", "r") as fl:
         print(read_pton(fl))
