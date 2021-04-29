@@ -33,12 +33,12 @@ def write_pton(filename, obj, obj_name: str):
 
 
 if __name__ == "__main__":
-    with open("test.pton", "r") as fl:
+    with open("example.pton", "r") as fl:
         print(read_pton(fl))
     print()
     lst = [1,2,3]
     dct = {"moin":"hallo"}
-    write_pton("write_test.pton", lst, "lst")
-    write_pton("write_test.pton", dct, "dct")
-    with open("write_test.pton", "r") as fl:
+    write_pton("write_example.pton", lst, "lst")
+    write_pton("write_example.pton", dct, "dct")
+    with open("write_example.pton", "r") as fl:
         print(read_pton(fl))
