@@ -14,10 +14,10 @@ def read_pton(file):
             continue
         if line == " ":
             continue
-        varname = line.split(" ", 1)[0]
+        varname = line.split("=", 1)[0]
         real = varname.split("[", 1)[0]
         if real in filedict and isinstance(filedict[real], list):
-            appendlist = eval(line.split(" ", 1)[1])
+            appendlist = eval(line.split("=", 1)[1])
             rarlist = filedict[real]
             for i in appendlist:
                 rarlist.append(i)
@@ -25,14 +25,14 @@ def read_pton(file):
         elif real in filedict and isinstance(filedict[real.split("[", 1)[0]], dict):
             if "[" in varname:
                 ke = varname.split("[", 1)[1].replace("]", "").replace(varname, "")
-                filedict[real][ke] = eval(line.split(" ", 1)[1])
+                filedict[real][ke] = eval(line.split("=", 1)[1])
             else:
-                appenddict = eval(line.split(" ", 1)[1])
+                appenddict = eval(line.split("=", 1)[1])
                 rardict = filedict[real]
                 rardict.update(appenddict)
                 filedict[real] = rardict
         else:
-            filedict[real] = eval(line.split(" ", 1)[1])
+            filedict[real] = eval(line.split("=", 1)[1])
     return filedict
 
 

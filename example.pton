@@ -1,11 +1,11 @@
-s "This is a string."  
-s "This overwrites the string."  
-whatsthat "This is an other string."
+s="This is a string."
+s="This overwrites the string."
+whatsthat="This is an other string."
 
 #One-line comments are supported to!
 
-lst ["This", "is", "a", "list."]  
-lst ["This", "will be", "appended", "on lst."]
-dct {"This":"is an dictionary"}  
-dct {"Whats that":"is an other entry of the dictionary"}  
-dct["This"] "is the value of This"
+lst=["This", "is", "a", "list."]
+lst=["This", "will be", "appended", "on lst."]
+dct={"This":"is an dictionary"}
+dct={"Whats that":"is an other entry of the dictionary"}
+dct["This"]="is the value of This"
