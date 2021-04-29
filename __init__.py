@@ -1,3 +1,6 @@
+__version__ == "1.0.0"
+
+
 def read_pton(file):
     if not hasattr(file, "readlines"):
         raise TypeError("'file' must be a File Object.")
