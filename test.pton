@@ -1,0 +1,8 @@
+l ["Moin"]
+l ["Hi"]
+l ["Privet"]
+l ["Kon'nichiwa", "Hallo"]
+d {"ol":"lol", "ra":"a"}
+d {"hallo":"hello"}
+d["hallo"] {"moin":"Privet", "hi":"Privet"}
+s "lol"
