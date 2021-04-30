@@ -10,6 +10,13 @@ def read_pon(file, imports: list = []):
             exec ("import "+i)
     filedict = {}
     for line in file.readlines():
+        if line.startswith("#imports "):
+            con = line.replace("#imports ")
+            imports = con.replace(" ","").split(",")
+            if len(imports) != 0:
+                for i in imports:
+                    exec("from " + i + " import *")
+                    exec("import " + i)
         if line == "":
             continue
         if line.startswith("#"):
@@ -47,3 +54,13 @@ def write_pon(filename, write_obj, obj_name: str, imports: list = []):
             exec ("import "+i)
     with open(filename, "a") as file:
         file.write(obj_name + " " + write_obj.__repr__() + "\n")
+def set_imports_pon(filename, imports: list = []):
+    with open(filename, "a") as file:
+        if len(imports) != 0:
+            file.write("#import ")
+            s = ""
+            for i in imports:
+                s += (i+", ")
+            s = s[:-1]
+            s = s[:-1]
+            file.write(s+"\n")

@@ -1,4 +1,4 @@
 import main
-from funcs import read_pton, write_pton
+from funcs import read_pton, write_pton, set_imports_pon
 
-__version__ = "v1.0.1-1"
+__version__ = "v1.0.2"
