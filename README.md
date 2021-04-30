@@ -22,3 +22,5 @@ The `ptonlib.read_pton(file)` function will return<br>
 If 'file' is the file object of 'example.pton'. <br>The `read_pton()` function returns a namespace dictionary.
 ## ptonlib.write_pton()
 If you want to add for example the list  `otherList = [1,2,3]` to `example.pton`, you must call `ptonlib.write_pton("example.pton", otherList, "otherList")`
+## The `imports` parameter
+If you want to store objects from other packages, you must put the package name in the list `imports`.
