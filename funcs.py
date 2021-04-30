@@ -9,7 +9,8 @@ def read_pon(file, imports: list = []):
             exec ("from "+i+" import *")
             exec ("import "+i)
     filedict = {}
-    for line in file.readlines():
+    lines = file.read().replace("#\n", "").split("\n")
+    for line in lines:
         if line.startswith("#imports "):
             con = line.replace("#imports ")
             imports = con.replace(" ","").split(",")

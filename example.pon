@@ -4,7 +4,8 @@ whatsthat "This is an other string."
 
 #One-line comments are supported to!
 
-lst ["This", "is", "a", "list."]  
+lst ["This", "is", "a",  #
+"list."]
 lst ["This", "will be", "appended", "on lst."]
 dct {"This":"is an dictionary"}  
 dct {"Whats that":"is an other entry of the dictionary"}  
