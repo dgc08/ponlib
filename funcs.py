@@ -1,7 +1,7 @@
 import os
 
 
-def read_pton(file, imports: list = []):
+def read_pon(file, imports: list = []):
     if not hasattr(file, "readlines"):
         raise TypeError("'file' must be a File Object.")
     if len(imports) != 0:
@@ -40,7 +40,7 @@ def read_pton(file, imports: list = []):
             exec ("filedict[real] = "+a)
     return filedict
 
-def write_pton(filename, write_obj, obj_name: str, imports: list = []):
+def write_pon(filename, write_obj, obj_name: str, imports: list = []):
     if len(imports) != 0:
         for i in imports:
             exec ("from "+i+" import *")

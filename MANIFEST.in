@@ -1,4 +1,4 @@
-include *.pton
+include *.pon
 include *.txt
 include *.ini
 include *.in
