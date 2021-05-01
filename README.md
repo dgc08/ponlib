@@ -4,7 +4,7 @@ Install the package with
 `git clone https://github.com/dgc08/ponlib/`  
   
 
-[![Open in Cloud Shell](https://user-images.githubusercontent.com/27065646/92304704-8d146d80-ef80-11ea-8c29-0deaabb1c702.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dgc08/ponlib&tutorial=README.md)
+[![Open in Google Cloud Shell](https://user-images.githubusercontent.com/27065646/92304704-8d146d80-ef80-11ea-8c29-0deaabb1c702.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dgc08/ponlib&tutorial=README.md)
 (run ponlib/example.py)
 ## The functions
 ### ponlib.read_pon()
@@ -69,4 +69,4 @@ If you want to store objects from other packages, you must put the package name 
 
 This comment tells the interpreter that it is necessary to import datetime and numpy.
 ## The license
-This project is under the Chronos License. The license and the license iformations are in the [LICENSE](https://github.com/dgc08/ponlib/blob/master/LICENSE) file.
+This project is under the [Chronos License](https://github.com/Team-Chronos/chronos-data/blob/main/ChronosLicense.md). The additional the license iformations are in the [LICENSE.md](https://github.com/dgc08/ponlib/blob/master/LICENSE) file.
