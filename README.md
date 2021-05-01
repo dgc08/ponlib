@@ -13,7 +13,7 @@ Install the package with
 `imports` is a list. The script will import the packages in this list additionaly to the imports defined in the `.pon` file.
 #### Example
 If you call `ponlib.read_pon(file)` with [example.pon](https://github.com/dgc08/ponlib/blob/master/ponlib/example.pon) as a file object it will returns  
-`{'s': 'This overwrites the string.', 'whatsthat': 'This is an other string.', 'lst': ['This', 'is', 'a', 'list.', 'This', 'will be', 'appended', "on 'lst'."], 'dct': {'This': 'is an dictionary', 'Whats that': 'is an other entry of the dictionary', '"This"': "is the value of 'This'"}}`  
+`{'s': 'This overwrites the string.', 'whatsthat': 'This is an other string.', 'lst': ['This', 'is', 'a', 'list.', 'This', 'will be', 'appended', "on 'lst'."], 'dct': {'This': 'is a dictionary', 'Whats that': 'is an other entry of the dictionary', '"This"': "is the value of 'This'"}}`  
 
 ### ponlib.write_pon()
 
