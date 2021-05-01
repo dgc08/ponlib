@@ -53,9 +53,9 @@ def write_pon(filename, write_obj, obj_name, imports: list = []):
         if len(write_obj) and len(obj_name):
             for i, obj in enumerate(write_obj):
                 write_pon(filename, obj, obj_name[i], imports)
+            return
         else:
             raise ValueError("write_obj and obj_name must have the same length")
-            return
 
     if len(imports) != 0:
         for import_name in imports:
