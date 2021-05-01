@@ -30,3 +30,8 @@ An example:
 
 	#import datetime
 	datetimeobject datetime.datetime(year=2021, month=4, day=30)
+## Ignore a new line
+if you put a '#' at the end of a line, the new line will be ignored. Example:
+
+	s "This is #
+	only one line and one string."
