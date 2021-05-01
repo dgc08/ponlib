@@ -1,4 +1,7 @@
-import main
-from funcs import read_pton, write_pton, set_imports_pon
+from . import funcs
 
 __version__ = "v1.0.2"
+
+read_pon = funcs.read_pon
+write_pon = funcs.write_pon
+set_imports_pon = funcs.set_imports_pon
