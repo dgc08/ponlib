@@ -1,7 +1,7 @@
-from . import funcs
+from . import ponlib
 
-__version__ = "v1.0.2"
+__version__ = "v1.0.2-1"
 
-read_pon = funcs.read_pon
-write_pon = funcs.write_pon
-set_imports_pon = funcs.set_imports_pon
+read_pon = ponlib.read_pon
+write_pon = ponlib.write_pon
+set_imports_pon = ponlib.set_imports_pon
