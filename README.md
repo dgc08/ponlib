@@ -2,6 +2,8 @@
 ## Installation
 Install the package with  
 `git clone https://github.com/dgc08/ponlib/`
+[![Run on Repl.it](https://user-images.githubusercontent.com/27065646/92304596-bf719b00-ef7f-11ea-987f-2c1f3c323088.png)](https://repl.it/github/dgc08/ponlib)
+(run ponlib/example.py)
 ## The functions
 ### ponlib.read_pon()
 #### The parameters
