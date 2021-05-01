@@ -4,7 +4,7 @@ used, copied, modified, merged, published, and distributed commercially and priv
 The software or data must always contains the license.  
 The original authors must also be noted in the license.  
 
-## liability
+## Liability
 IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,  
 DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,  
 THAT RESULT IN CONNECTION WITH THE SOWTWARE OR DATA.  
