@@ -1,6 +1,6 @@
 # Chronos License
 This Project is under the Chronos License:  
-https://github.com/Team-Chronos/chronos-data/blob/main/ChronosLicense.md
+https://ogy.de/chronoslicense
 
 
 The Author/-s, the Name of the Data/software and contact informations:  
