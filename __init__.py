@@ -2,6 +2,6 @@ from . import ponlib
 
 __version__ = "v1.0.2-1"
 
-read_pon = ponlib.read_pon
-write_pon = ponlib.write_pon
-set_imports_pon = ponlib.set_imports_pon
+for i in dir(ponlib):
+    if not i.startswith("__") and not i.endswith("__"):
+        exec (i+" = ponlib."+i)
