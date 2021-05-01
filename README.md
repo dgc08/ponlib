@@ -69,4 +69,4 @@ If you want to store objects from other packages, you must put the package name 
 
 This comment tells the interpreter that it is necessary to import datetime and numpy.
 ## The license
-This project is under the [Chronos License](https://github.com/Team-Chronos/chronos-data/blob/main/ChronosLicense.md). The additional the license iformations are in the [LICENSE.md](https://github.com/dgc08/ponlib/blob/master/LICENSE) file.
+This project is under the [Chronos License](https://github.com/Team-Chronos/chronos-data/blob/main/ChronosLicense.md). The additional the license iformations are in the [LICENSE.md](https://github.com/dgc08/ponlib/blob/master/LICENSE.md) file.
