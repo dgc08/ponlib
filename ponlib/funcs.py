@@ -44,15 +44,21 @@ def read_pon(file, imports: list = []):
                 rardict.update(appenddict)
                 filedict[real] = rardict
         else:
-            a = line.split(" ", 1)[1]
-            exec ("filedict[real] = "+a)
+
+            filedict[real] = eval("str("+line.split(" ", 1)[1]+")")
     return filedict
 
-def write_pon(filename, write_obj, obj_name: str, imports: list = []):
+def write_pon(filename, write_obj, obj_name, imports: list = []):
+    if isinstance(write_obj, list) and isinstance(obj_name, list):
+        if len(write_obj) and len(obj_name):
+            for i, obj in enumerate(write_obj):
+                write_pon(filename, obj, obj_name[i], imports)
+            return
+
     if len(imports) != 0:
-        for i in imports:
-            exec ("from "+i+" import *")
-            exec ("import "+i)
+        for import_name in imports:
+            exec ("from "+import_name+" import *")
+            exec ("import "+import_name)
     with open(filename, "a") as file:
         file.write(obj_name + " " + write_obj.__repr__() + "\n")
 def set_imports_pon(filename, imports: list = []):

@@ -23,9 +23,9 @@ If you call `ponlib.read_pon(file)` with [example.pon](https://github.com/dgc08/
 `ponlib.write_pon` writes a object in a `.pon` file  
 `ponlib.write_pon` has four parameters:  
 
-	filename:    string, the name of the file to write
-	object:      The object to write
-	object_name: string, the name to save in the `.pon` file
+	filename:    string/list, the name of the file to write
+	object:      The object or the list of objects to write
+	object_name: string/list, the name/-s of the object/-s to save in the `.pon` file
 	imports:     list, imports that are needed to write the object
 
 #### Example
