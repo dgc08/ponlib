@@ -1,2 +1,2 @@
 language = "python3"
-run = "python ponlib/example.py"
+run = ""
