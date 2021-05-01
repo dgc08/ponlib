@@ -7,6 +7,6 @@ whatsthat "This is an other string."
 lst ["This", "is", "a",  #
 "list."]
 lst ["This", "will be", "appended", "on lst."]
-dct {"This":"is an dictionary"}  
+dct {"This":"is a dictionary"}  
 dct {"Whats that":"is an other entry of the dictionary"}  
 dct["This"] "is the value of This"
