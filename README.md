@@ -1,11 +1,16 @@
 # Python Object Notation (PON)
-## Installation
+## Installation and the scripts
 Install the package with  
 `git clone https://github.com/dgc08/ponlib/`  
   
 
 [![Open in Google Cloud Shell](https://user-images.githubusercontent.com/27065646/92304704-8d146d80-ef80-11ea-8c29-0deaabb1c702.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dgc08/ponlib&tutorial=README.md)
 (run ponlib/example.py)
+### Run example.py
+To run example.py, use `python3 ponlib --example`
+At first, it reads the `ponlib/ponlib/example.pon` file. Then it writes a few object in `write_example.pon` and reads them.
+### Get version and check for updates
+To get your version and check for updates, use `python3 ponlib --version`
 ## The functions
 ### ponlib.read_pon()
 #### The parameters
@@ -61,11 +66,7 @@ The detailed definition of the `.pon` is in the file [PON_DEF-md](https://github
     dct["This"] "is the value of This"
 
 
-### The `imports` parameter
-If you want to store objects from other packages, you must put the package name in the list `imports`. Example:
-
-	#imports datetime, numpy
-
-This comment tells the interpreter that it is necessary to import datetime and numpy.
+### More about the syntax
+Look at [PON_DEF.md](https://github.com/dgc08/ponlib/blob/master/PON_DEF.md) to read more abaout the PON-Syntax
 ## The license
 This project is under the [Chronos License](https://github.com/Team-Chronos/chronos-data/blob/main/ChronosLicense.md). The additional the license iformations are in the [LICENSE.md](https://github.com/dgc08/ponlib/blob/master/LICENSE.md) file.

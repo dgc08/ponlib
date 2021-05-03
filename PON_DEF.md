@@ -1,4 +1,6 @@
 # Definition of the PON-Format
+## The PON Format
+In the PON format you can store objects of any
 ## Strings
 In a `.pton` file, you claim strings like this  
 `[variable name] "String"`  
@@ -24,12 +26,31 @@ Dictionarys are like lists. Here are two examples:
 	"people": 30, "roadname":"Example Road
 ## Other types and custom classes
 Other types and custom classes will work too, but if you define them twice it would be overwritten.
-## The #imports-statement
-If you use custom classes, you must add a #import statement to import them from their module or package.
+## The /imports-statement
+If you use custom classes, you must add a /import statement to import them from their module or package.
 An example:
 
-	#import datetime
+	/import datetime
 	datetimeobject datetime.datetime(year=2021, month=4, day=30)
+## The /get-statement
+With the `/get`-statement you can get variables of other `.pon` files. An example:  
+`pon2.pon`
+
+	var2 "This is the variable to get."
+
+`pon1.pon`
+
+	/get pon2.pon:var2
+
+If you read `pon1.pon` now, you will fin `var2` there.
+
+## Call Python functions
+You can use the functions of an imported python package too. An example:
+
+	/imports random
+	random random.random()
+
+This will return something different every time!
 ## Ignore a new line
 if you put a '#' at the end of a line, the new line will be ignored. Example:
 
