@@ -11,16 +11,26 @@ def read_pon(file, imports: list = []):
     filedict = {}
     lines = file.read().replace("#\n", "").split("\n")
     for line in lines:
-        if line.startswith("#imports "):
-            con = line.replace("#imports ")
+        if line.startswith("/imports "):
+            con = line.replace("/imports ", "")
             imports = con.replace(" ","").split(",")
             if len(imports) != 0:
                 for i in imports:
                     exec("from " + i + " import *")
                     exec("import " + i)
+        if line.startswith("/get "):
+            con = line.replace("/get ", "")
+            gets = con.split(" ")
+            for i in gets:
+                lst = i.split(":")
+                with open(lst[0], "r") as fl:
+                    got = read_pon(fl)
+                filedict[lst[1]] = got[lst[1]]
         if line == "":
             continue
         if line.startswith("#"):
+            continue
+        if line.startswith("/"):
             continue
         if line == "\n":
             continue
@@ -44,7 +54,6 @@ def read_pon(file, imports: list = []):
                 rardict.update(appenddict)
                 filedict[real] = rardict
         else:
-
             filedict[real] = eval("str("+line.split(" ", 1)[1]+")")
     return filedict
 

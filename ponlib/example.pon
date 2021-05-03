@@ -1,6 +1,9 @@
-s "This is a string."  
-s "This overwrites the string."  
+/get ponlib/ponlib/to_get.pon:s_to_get
+
+s "This is a string."
+s "This overwrites the string."
 whatsthat "This is an other string."
+-var "This is not a valid variable name."
 
 #One-line comments are supported to!
 

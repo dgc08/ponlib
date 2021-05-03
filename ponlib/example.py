@@ -8,11 +8,11 @@ for i in dir(funcs):
 
 def main():
     try:
-        with open("example.pon", "r") as fl:
+        with open("ponlib/ponlib/example.pon", "r") as fl:
             print(read_pon(fl))
     except FileNotFoundError:
         try:
-            with open("ponlib/example.pon", "r") as fl:
+            with open("ponlib/ponlib/example.pon", "r") as fl:
                 print(read_pon(fl))
         except:
             with open("ponlib/ponlib/example.pon", "r") as fl:

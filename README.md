@@ -65,11 +65,7 @@ The detailed definition of the `.pon` is in the file [PON_DEF-md](https://github
     dct["This"] "is the value of This"
 
 
-### The `imports` parameter
-If you want to store objects from other packages, you must put the package name in the list `imports`. Example:
-
-	#imports datetime, numpy
-
-This comment tells the interpreter that it is necessary to import datetime and numpy.
+### More about the syntax
+Look at [PON_DEF.md](https://github.com/dgc08/ponlib/blob/master/PON_DEF.md) to read more abaout the PON-Syntax
 ## The license
 This project is under the Chronos License. The license and the license iformations are in the [LICENSE](https://github.com/dgc08/ponlib/blob/master/LICENSE) file.

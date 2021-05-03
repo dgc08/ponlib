@@ -16,4 +16,4 @@ except:
             with open("./data.pon", "r") as file:
                 __version__ = read_pon(file)["version"]
         except:
-            __version__ = "v1.0.3-pre1"
+            __version__ = "v1.0.4"
