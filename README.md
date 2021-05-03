@@ -1,9 +1,14 @@
 # Python Object Notation (PON)
-## Installation
+## Installation and the scripts
 Install the package with  
 `git clone https://github.com/dgc08/ponlib/`  
 [![Open in Cloud Shell](https://user-images.githubusercontent.com/27065646/92304704-8d146d80-ef80-11ea-8c29-0deaabb1c702.png)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/dgc08/ponlib&tutorial=README.md)
 (run ponlib/example.py)
+### Run example.py
+To run example.py, use `python3 ponlib -example`
+At first, it reads the `ponlib/ponlib/example.pon` file. Then it writes a few object in `write_example.pon` and reads them.
+### Get version and check for updates
+To get your version and check for updates, use `python3 ponlib -version`
 ## The functions
 ### ponlib.read_pon()
 #### The parameters
