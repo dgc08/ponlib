@@ -26,12 +26,8 @@ try:
     args =  sys.argv[1]
 except IndexError:
     args = ""
-if args == "-version":
+if args == "--version":
     print("Local version: " + local_version)
-    ret = check_updates()
-    if ret is not None:
-        print(ret)
-    else:
-        print("No updates available.")
-if args == "-example":
+    check_updates()
+if args == "--example":
     from . import example
